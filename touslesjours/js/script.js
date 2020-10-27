@@ -20,8 +20,21 @@ $(document).ready(function(){
     });
     
     
-    
-    
+    $(window).scroll(function () {
+        
+        
+        console.log($(this).scrollTop());
+
+    if ($(this).scrollTop() > 900) {
+      $("#header").css({ display : "none" });
+      $("#header-color").css({ display : "block" });
+    } else {
+      $("#header").css({ display : "block" });
+      $("#header-color").css({ display : "none" });
+    }
+        
+        
+    });
     
     
     

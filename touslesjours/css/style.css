@@ -59,6 +59,7 @@ a {
     left: 0;
     min-width: 1550px;
     z-index: 999;
+    display: block;
 }
 
 .logo-wrap {
@@ -122,7 +123,6 @@ a {
     border-bottom: none;
 }
 
-
 .right-menu {
     margin-right: 5%;
 }
@@ -134,6 +134,36 @@ a {
 .right-menu li a {
     color: #fff;
     font-size: 13px;
+}
+
+/*header-color*/
+
+#header-color {
+    width: 100%;
+    height: 70px;
+    background-color: #074C43;
+    line-height: 70px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 1550px;
+    z-index: 990;
+    display: none;
+}
+
+#header-color .menu > ul > li:hover {
+    background-color: #04332b;
+}
+
+#header-color .menu > ul > li > .dept2 > li{
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+#header-color .menu > ul > li > .dept2 > li > a::after {
+    border-bottom: none;
 }
 
 /*visual*/
@@ -295,6 +325,10 @@ a {
     box-sizing: border-box;
 }
 
+#section2 .con .left .search input:focus {
+    outline: none;
+}
+
 #section2 .con .left .search .sch {
     position: absolute;
     right: 1px;
@@ -308,6 +342,10 @@ a {
     width: 20px;
     height: 20px;
     transform: translate(20%, 20%);
+}
+
+#section2 .con .left .search .sch input:focus {
+    outline: none;
 }
 
 #section2 .con .left .blackop {
@@ -565,7 +603,7 @@ a {
 #section5 {
     width: 100%;
     height: 200px;
-    background-color: #EDE1C9;
+    background-color: #eee;
     overflow: hidden;
     cursor: pointer;
 }
@@ -591,13 +629,13 @@ a {
 #section5 .txt p:first-child {
     font-size: 28px;
     color: #555;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 #section5 .txt p:nth-child(2) {
     font-size: 17px;
     color: #555;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 15px;
 }
 
@@ -636,6 +674,13 @@ a {
     position: relative;
 }
 
+#section6 div .blackop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+}
+
 #section6 div .txt {
     width: 50%;
     height: 50%;
@@ -645,13 +690,144 @@ a {
     color: #fff;
 }
 
-#section6 div .blackop {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
+#section6 div .txt p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
+#section6 div .txt p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+#section6 div .txt a {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+
+#section6 div .txt a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+/*section7*/
+
+#section7 {
+    width: 100%;
+    height: 200px;
+    background-color: #f6f6f6;
+}
+
+#section7 .con {
+    padding-top: 30px;
+}
+
+#section7 .con .left {
+    width: 60%;
+}
+
+#section7 .con .left p {
+    margin-bottom: 20px;
+}
+
+#section7 .con .left .icon-box {
+    width: 499px;
+    height: 85px;
+    background: url(../img/common.png) no-repeat left;
+    background-size: cover;
+    transform: translateX(-8px);
+}
+
+#section7 .con .right {
+    width: 40%;
+    position: relative;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+#section7 .con .right::before {
+    display: block;
+    content: "";
+    width: 1.5px;
+    height: 140px;
+    background-color: #ddd;
+    position: absolute;
+    left: 0;
+}
+
+#section7 .con div p:first-child {
+    color: #666;
+    font-size: 17px;
+}
+
+#section7 .con .right p:first-child {
+    margin-bottom: 25px;
+}
+
+#section7 .con .right p:nth-child(2), p:nth-child(3), p:nth-child(4) {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+/*footer*/
+
+#footer .ft-tp {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+#footer .ft-tp span {
+    margin-right: 2px;
+    font-size: 15px;
+    color: #555;
+}
+
+#footer .ft-tp a {
+    font-weight: 600;
+    color: #074c43;
+}
+
+#footer .ft-md {
+    padding-top: 20px;
+}
+
+#footer .ft-md .logo {
+    width: 120px;
+    height: 93px;
+    background: url(../img/logo1.png) no-repeat center;
+    background-size: cover;
+    margin: 0 30px;
+}
+
+#footer .ft-md .txt p {
+    font-size: 13px;
+    color: #555;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+#footer .ft-bt {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#footer .ft-bt p {
+    font-size: 13px;
+    color: #333;
+}
+
+#footer .ft-bt a {
+    margin: 0 15px;
+    color: #074c43;
+    font-size: 18px;
+}
 
 
 
