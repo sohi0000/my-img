@@ -799,21 +799,124 @@ a {
 }
 
 #section7 .con .left .icon-box {
-    background-size: cover;
-    transform: translateX(-8px);
+/*    background-color: #333;*/
+    display: inline-table;
+    width: 600px;
+    margin-left: -10px;
 }
 
 #section7 .con .left .icon-box .icon {
-    height: 25px;
-    margin-right: 5px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    width: 80px;
+    height: 30px;
+}
+
+#section7 .con .left .icon-box .icon div {
     cursor: pointer;
 }
 
 #section7 .con .left .icon-box .icon1 {
-    background: url(../img/icon/1.png) no-repeat center;
-    background-size: cover;
-    width: ;
+    background: url(../img/common.png) no-repeat center;
+    width: 55px;
+    height: 27px;
+    background-position: -590px -266px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+
+#section7 .con .left .icon-box .icon2 {
+    background: url(../img/common.png) no-repeat center;
+    width: 40px;
+    height: 24px;
+    background-position: -650px -268px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section7 .con .left .icon-box .icon3 {
+    background: url(../img/common.png) no-repeat center;
+    width: 47px;
+    height: 23px;
+    background-position: -701px -333px;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section7 .con .left .icon-box .icon4 {
+    background: url(../img/common.png) no-repeat center;
+    width: 59px;
+    height: 14px;
+    background-position: -761px -338px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section7 .con .left .icon-box .icon5 {
+    background: url(../img/common.png) no-repeat center;
+    width: 38px;
+    height: 24px;
+    background-position: -832px -332px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section7 .con .left .icon-box .icon6 {
+    background: url(../img/common.png) no-repeat center;
+    width: 50px;
+    height: 16px;
+    background-position: -745px -404px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section7 .con .left .icon-box .icon7 {
+    background: url(../img/common.png) no-repeat center;
+    width: 58px;
+    height: 13px;
+    background-position: -670px -474px;
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section7 .con .left .icon-box .icon8 {
+    background: url(../img/common.png) no-repeat center;
+    width: 102px;
+    height: 13px;
+    background-position: -1013px -671px;
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section7 .con .left .icon-box .icon9 {
+    background: url(../img/common.png) no-repeat center;
+    width: 68px;
+    height: 30px;
+    background-position: -1127px -665px;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section7 .con .left .icon-box .icon10 {
+    background: url(../img/common.png) no-repeat center;
+    width: 74px;
+    height: 27px;
+    background-position: -860px -401px;     
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 
