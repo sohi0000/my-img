@@ -1,0 +1,6 @@
+0 첫슬라이더 화살표 양각, 아이템 4개
+0 이벤트 배너 너비 살짝 줄이기
+0 패밀리 사이트 수직중앙
+0 공지사항 text-decoration:underline;
+0 사이트맵 폰트크기 살짝 줄이기
+0 탑바 우측 메뉴 아이템 text-decoration:underline;
