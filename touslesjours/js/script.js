@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 $(".slider-wrap1").slick({
 
-    slidesToShow: 3,
+    slidesToShow: 4,
     infinite: true,
     arrows: true
 

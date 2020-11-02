@@ -178,6 +178,10 @@ a {
     font-size: 13px;
 }
 
+.right-menu li a:hover {
+    text-decoration: underline;
+}
+
 /*header-color*/
 
 #header-color {
@@ -240,10 +244,10 @@ a {
 }
 
 .slider-wrap1 .slick-prev {
-    background-image: url(../img/arrow.png);
+    background-image: url(../img/next-01.png);
     background-size: cover;
-    width: 40px;
-    height: 60px;
+    width: 30px;
+    height: 55px;
     left: -40px;
     z-index: 2;
     transform: rotate(180deg);
@@ -254,13 +258,13 @@ a {
 }
 
 .slider-wrap1 .slick-next {
-    background-image: url(../img/arrow.png);
+    background-image: url(../img/next-01.png);
     background-size: cover;
-    width: 40px;
-    height: 60px;
+    width: 30px;
+    height: 55px;
     right: -40px;
     z-index: 2;
-    top: 56%;
+    top: 57.5%;
 }
 
 .slider-wrap1 p img {
@@ -306,7 +310,7 @@ a {
     text-align: center;
     line-height: 30px;
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -314,8 +318,8 @@ a {
 /*section2*/
 
 #section2 .con .left {
-    width: 63%;
-    height: 450px;
+    width: 68%;
+    height: 387px;
     background: url(../img/1.jpg) no-repeat center;
     background-size: cover;
     position: relative;
@@ -392,8 +396,8 @@ a {
 }
 
 #section2 .con .right {
-    width: 35%;
-    height: 450px;
+    width: 30%;
+    height: 380px;
     background-color: #777;
     margin-left: 2%;
 }
@@ -882,7 +886,7 @@ a {
     width: 58px;
     height: 13px;
     background-position: -670px -474px;
-    margin-top: 13px;
+    margin-top: 17px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -892,7 +896,7 @@ a {
     width: 102px;
     height: 13px;
     background-position: -1013px -671px;
-    margin-top: 13px;
+    margin-top: 17px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -902,7 +906,7 @@ a {
     width: 68px;
     height: 30px;
     background-position: -1127px -665px;
-    margin-top: 6px;
+    margin-top: 9px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -912,7 +916,7 @@ a {
     width: 74px;
     height: 27px;
     background-position: -860px -401px;     
-    margin-top: 12px;
+    margin-top: 8px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -997,11 +1001,14 @@ p:nth-child(4) {
 #section7 .con .right .txt-box div {
     margin-bottom: 10px;
     color: #777;
-    cursor: pointer;
 }
 
 #section7 .con .right .txt-box div span:first-child {
     font-size: 14px;
+}
+
+#section7 .con .right .txt-box div span:first-child:hover {
+    text-decoration: underline;
 }
 
 #section7 .con .right .txt-box div span:last-child {
@@ -1061,13 +1068,19 @@ p:nth-child(4) {
 
 #footer .ft-tp span {
     margin-right: 2px;
-    font-size: 15px;
+    font-size: 14px;
     color: #555;
 }
 
 #footer .ft-tp a {
     font-weight: 600;
     color: #074c43;
+    font-size: 14px;
+}
+
+#footer .ft-tp a:hover {
+    text-decoration: underline;
+    
 }
 
 #footer .ft-md {
