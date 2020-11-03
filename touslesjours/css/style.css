@@ -141,6 +141,13 @@ a {
 }
 
 .menu > ul > li > .dept2 > li > a {
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+}
+
+.menu > ul > li > .dept2 > li > a > span {
     font-size: 14px;
     font-weight: 700;
     color: #666;
@@ -1061,10 +1068,12 @@ p:nth-child(4) {
 /*footer*/
 
 #footer .ft-tp {
-    height: 60px;
-    line-height: 60px;
+    line-height: 90px;
     border-bottom: 1px solid #ddd;
+    text-align: center;
 }
+
+
 
 #footer .ft-tp span {
     margin-right: 2px;
@@ -1084,7 +1093,7 @@ p:nth-child(4) {
 }
 
 #footer .ft-md {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 #footer .ft-md .logo {
@@ -1115,8 +1124,8 @@ p:nth-child(4) {
 }
 
 #footer .ft-bt {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 #footer .ft-bt p {
