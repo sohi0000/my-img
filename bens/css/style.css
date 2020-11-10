@@ -57,6 +57,7 @@ a {
     height: 90px;
     border-bottom: 1px solid #999;
     position: relative;
+    box-sizing: border-box;
 }
 
 #header .hd-tp-logo {
@@ -99,6 +100,53 @@ a {
     margin-left: 10px;
 }
 
+#header .hd-bt > .con > ul {
+    display: flex;
+    justify-content: center;
+}
+
+#header .hd-bt ul {
+    position: relative;
+}
+
+#header .hd-bt ul li span {
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #eee;
+    margin-top: 18px;
+}
+
+#header .hd-bt ul {
+    line-height: 50px;
+}
+
+#header .hd-bt ul li {
+    padding: 0 25px;
+}
+
+#header .hd-bt ul li a {
+    position: relative;
+    display: inline-block;
+}
+
+#header .hd-bt .con > ul > li > a::after {
+    width: 0;
+    height: 2px;
+    display: block;
+    content: "";
+    background-color: #eee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.3s ease;
+    margin: 0 auto;
+}
+
+#header .hd-bt .con > ul > li:hover > a::after {
+    width: 100%;
+}
 
 
 
@@ -109,6 +157,108 @@ a {
 
 
 
+
+
+#header .hd-bt .dept2 {
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#header .hd-bt li:first-child:hover > .dept2{
+    height: 480px;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header .hd-bt ul li:first-child .dept2 {
+    display: block;
+}
+
+#header .hd-bt .dept2 {
+    border: 2px solid red;
+    width: 1300px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#header .hd-bt .dept2 h2 {
+    color: #333;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+}
+
+#header .hd-bt .dept2 .in-menu {
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+#header .hd-bt .dept2 .in-menu ul {
+    position: relative;
+}
+
+#header .hd-bt .dept2 .in-menu > ul::before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    top: 0;
+}
+
+#header .hd-bt .dept2 .in-menu > ul > li {
+    color: #333;
+    font-weight: 700;
+    padding-left: 50px;
+}
+
+#header .hd-bt .dept2 .in-menu > ul > li li {
+    color: #999;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#header .hd-bt .dept2 .in-img {
+    padding: 50px 80px;
+}
+
+#header .hd-bt .dept2 .in-img img {
+    width: 600px;
+}
 
 
 
