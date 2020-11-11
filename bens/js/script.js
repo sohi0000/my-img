@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-            $(".hd-tp-right ul li:last-child i").click(function () {
+            $(".hd-tp-right ul li:last-child div").click(function () {
                 $(".hd-tp-right ul li:last-child").toggleClass("active");
             });
 
