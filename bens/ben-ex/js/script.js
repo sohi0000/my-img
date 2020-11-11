@@ -74,10 +74,10 @@ function SliderK__initPageNav($slider) {
         
     for ( var i = 0; i < slidesCount; i++ ) {
         if ( i == currentIndex ) {
-            html += '<div class="active"><span>' + (i + 1) + '</span></div>';
+            html += '<div class="active"><span>' + '</span></div>';
         }
         else {
-            html += '<div><span>' + (i + 1) + '</span></div>';
+            html += '<div><span>' + '</span></div>';
         }
     }
 
