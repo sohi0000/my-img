@@ -36,7 +36,7 @@ a {
 }
 
 .con {
-    max-width: 1300px;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -909,6 +909,238 @@ a {
 
 
 
+/*section3*/
+
+
+
+
+
+.slider-k-1 > .slides {
+    position: relative;
+    height: 450px;
+    /* 조절 포인트 */
+}
+
+.slider-k-1 > .slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-k-1 > .slides > div.active {
+    z-index: 1;
+}
+
+.slider-k-1 > .slides > div > .box-1 {
+    height: 100%;
+    display: flex;
+}
+
+.slider-k-1 > .slides > div > .box-1 > .txt-box-1 {
+    flex: 1 0 0;
+    background-color: #eee;
+}
+
+.slider-k-1 > .slides > div > .box-1 > .img-box:nth-child(2) {
+    order: 1;
+}
+
+.slider-k-1 .slides > div > .box-1 > .img-box {
+    width: 450px;
+    /* 조절 포인트 */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider-k-1 .slides > div > .box-1 > .img-box > div {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: left 0s 0.5s;
+}
+
+
+.slider-k-1 .slides > div.active > .box-1 > .img-box > div {
+    left: 0;
+    transition: left 0.5s;
+}
+
+.slider-k-1 .slides > div > .box-1 > .txt-box-1 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.slider-k-1 .slides > div.active > .box-1 > .txt-box-1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-k-1 .side-btns {
+    display: none;
+}
+
+.slider-k-1 .page-nav {
+    text-align: center;
+}
+
+.slider-k-1 .page-nav > div {
+    position: relative;
+    white-space: nowrap;
+}
+
+.slider-k-1 .page-nav > div > div {
+    display: flex;
+}
+
+.slider-k-1 .page-nav > div > div > div {
+    flex: 1 1 0;
+    /*    background-color: #333;*/
+    opacity: 0.4;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.slider-k-1 .page-nav > div > div > div:first-child {
+    background: url(../img/new-arrival/1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.slider-k-1 .page-nav > div > div > div:nth-child(2) {
+    background: url(../img/new-arrival/2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+.slider-k-1 .page-nav > div > div > div:nth-child(3) {
+    background: url(../img/new-arrival/3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+.slider-k-1 .page-nav > div > div > div:nth-child(4) {
+    background: url(../img/new-arrival/4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+.slider-k-1 .page-nav > div > div > div:nth-child(5) {
+    background: url(../img/new-arrival/5.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+.slider-k-1 .page-nav > div > div > div:nth-child(6) {
+    background: url(../img/new-arrival/6.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.slider-k-1 .page-nav > div > div > div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.slider-k-1 .page-nav > div > div > div::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.slider-k-1 .page-nav > div > section {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background-color: black;
+    transition: top 0.4s, left 0.4s;
+    width: 0;
+}
+
+.slider-k-1 .page-nav > div > div > div:hover {
+    opacity: 0.7;
+}
+
+.slider-k-1 .page-nav > div > div > div.active {
+    opacity: 1;
+}
+
+.slider-k-1 .slides > div > .box-1 > .txt-box-1 {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 150px 50px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+#section3 .txt-box-1 .p1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#section3 .txt-box-1 .p2 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#section3 .txt-box-1 .p3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+#section3 .txt-box-1 .span1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#section3 .txt-box-1 .span2 {
+    font-size: 13px;
+    font-weight: lighter;
+    text-decoration: line-through
+}
+
+#section3 .txt-box-1 .span {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*section4*/
+
+#section4 .txt-box {
+    width: 100%;
+    height: 400px;
+    background: url(../img/bg-img/bens_brand_story.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+
+#section4 .txt-box p:first-child {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#section4 .txt-box p:nth-child(2) {
+    font-size: 18px;
+}
+
+/*section5*/
 
 
 
@@ -920,4 +1152,92 @@ a {
 
 
 
-/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
