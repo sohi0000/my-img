@@ -172,8 +172,9 @@ $(document).ready(function () {
     });
 
     $('#section9 .slider-wrap').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToShow:   3,
+        slidesToScroll: 1,
+        margin:20
     });
 
 
@@ -186,7 +187,7 @@ $(document).ready(function () {
         var $topBar = $('#header .hd-bt');
         $(window).scroll(function () {
             var scrollTop = $(window).scrollTop();
-            if (scrollTop > 100) {
+            if (scrollTop > 90) {
                 $html.addClass('top2-bar-fly');
             } else {
                 $html.removeClass('top2-bar-fly');
