@@ -141,6 +141,9 @@ function SliderK__initAutoplay($slider) {
 }
 
 $(document).ready(function () {
+
+
+
     $(".hd-tp-right ul li:last-child div").click(function () {
         $(".hd-tp-right ul li:last-child").addClass("active");
     });
@@ -173,33 +176,27 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
 
+
+
+    console.clear();
+    var $html = $('html');
+
+    function TopBar_init() {
+
+        var $topBar = $('#header .hd-bt');
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 100) {
+                $html.addClass('top2-bar-fly');
+            } else {
+                $html.removeClass('top2-bar-fly');
+            }
+        });
+    }
+
+    TopBar_init();
+
+
+
     SliderK__init();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
