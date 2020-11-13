@@ -772,7 +772,7 @@ a {
 /*section2*/
 
 #section2 {
-    width: 100%;
+    min-width: 1500px;
     height: 600px;
 }
 
@@ -845,7 +845,7 @@ a {
 }
 
 #section2 .txt-box {
-    padding: 80px;
+    padding: 70px;
     box-sizing: border-box;
     text-align: center;
 }
