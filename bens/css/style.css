@@ -162,10 +162,6 @@ a {
     z-index: 1;
     border: 0.8px solid #333;
     display: none;
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -283,6 +279,7 @@ a {
     overflow: hidden;
     transition: 0.5s ease;
     z-index: 900;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 
 #header .hd-bt li:first-child:hover > .dept2 {
