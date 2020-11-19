@@ -20,12 +20,17 @@ a {
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    min-width: 1300px;
+    letter-spacing: .4;
 }
 
 /*header*/
 
+body {
+    padding-top:130px;
+}
+
 #header {
+    top:0;
     position: fixed;
     height: 130px;
     width: 100%;
@@ -36,6 +41,7 @@ body {
     padding: 0 60px;
     box-sizing: border-box;
     z-index: 999;
+    min-width: 1783px;
 }
 
 #header .menu {
@@ -47,7 +53,7 @@ body {
 }
 
 #header .menu > ul > li > a {
-    padding: 0 30px;
+    padding: 0 33px;
     display: inline-block;
     box-sizing: border-box;
     line-height: 130px;
@@ -73,21 +79,29 @@ body {
     width: 100%;
 }
 
+#header .menu > ul > li {
+    position: relative;
+}
+
 #header .menu > ul > li ul {
-    width: 100%;
     z-index: 15;
-/*    position: absolute;*/
-    display: none;
+    top:100%;
+    left:0;
+    width:100%;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease;
 }
 
 #header .menu > ul > li ul li {
     text-align: center;
     padding: 10px 0;
-    background-color: #000;
+/*    background-color: #000;*/
 }
 
 #header .menu:hover > ul > li ul {
-    display: block;
+    height: 264px;
 }
 
 #header .menu > ul + .menu-bg {
@@ -142,3 +156,202 @@ body {
     font-size: 14px;
     color: #555;
 }
+
+#header .menu-bg {
+    overflow: hidden;
+}
+
+#header .bg-in {
+    width: 900px;
+    height: 264px;
+}
+
+#header .bg-in-img {
+    width: 900px;
+    height: 160px;
+    background: url(../img/top-1.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+}
+
+/*visual*/
+
+#visual .slide {
+    height: 839px;
+    background-position: center;
+    background-size: cover;
+}
+
+#visual .slide1 {
+    background: url(../img/main-slider/1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#visual .slide2 {
+    background: url(../img/main-slider/2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#visual .slide3 {
+    background: url(../img/main-slider/3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#visual .slide4 {
+    background: url(../img/main-slider/4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#visual .slide5 {
+    background: url(../img/main-slider/5.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#visual .slide6 {
+    background: url(../img/main-slider/6.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
