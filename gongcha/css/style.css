@@ -267,6 +267,10 @@ body {
     bottom: 0;
 }
 
+#visual .swiper-button-next:after, #visual .swiper-button-prev:after {
+    font-size: 50px;
+}
+
 /*section1*/
 
 .section > p {
