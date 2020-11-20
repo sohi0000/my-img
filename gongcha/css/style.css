@@ -408,12 +408,12 @@ body {
 
 #section1 .slider-wrap2 .swiper-pagination .swiper-pagination-bullet:nth-child(3) {
     background: url(../img/best-combination/b-c/3.png) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 #section1 .slider-wrap2 .swiper-pagination .swiper-pagination-bullet:nth-child(4) {
     background: url(../img/best-combination/b-c/4.png) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 #section1 .slider-wrap2 .swiper-pagination .swiper-pagination-bullet:nth-child(5) {
