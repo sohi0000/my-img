@@ -14,9 +14,21 @@ a {
     text-decoration: none;
 }
 
+.con-min-width {
+    min-width: 1300px;
+}
+
 .con {
     width: 1300px;
     margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-as-c {
+    align-self: center;
 }
 
 .section {
@@ -44,7 +56,6 @@ body {
     padding: 0 60px;
     box-sizing: border-box;
     z-index: 999;
-    min-width: 1783px;
 }
 
 #header .menu {
@@ -130,17 +141,20 @@ body {
 #header .logo {
     width: 62px;
     height: 80px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-self: center;
 }
 
 #header .logo .logo-img {
     width: 100%;
     height: 100%;
+    display: inline-block;
     background: url(../img/logo.png) no-repeat center;
     background-size: cover;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
 #header .sns {
@@ -180,6 +194,12 @@ body {
 }
 
 /*visual*/
+
+#visual .slider-wrap1 .slide a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 
 #visual .slider-wrap1 .slide {
     height: calc(100vh - 130px);
@@ -267,6 +287,8 @@ body {
     height: 500px;
     padding: 50px;
     box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
     /*    border: 1px solid #333;*/
 }
 
@@ -293,10 +315,14 @@ body {
 #section1 .slider-wrap2 .slide .txt-box p:nth-child(4) {
     font-size: 14px;
     color: #777;
-    margin-bottom: 60px;
 }
 
-#section1 .slider-wrap2 .slide .txt-box .btn  .btn-a {
+#section1 .slider-wrap2 .slide .txt-box .btn {
+    position: absolute;
+    bottom: 150px;
+}
+
+#section1 .slider-wrap2 .slide .txt-box .btn .btn-a {
     width: 200px;
     height: 50px;
     display: inline-block;
@@ -522,6 +548,12 @@ body {
     height: 500px;
 }
 
+#section3 .right .slider-wrap3 .swiper-slide a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
 #section3 .right .slider-wrap3 .slide1 {
     background: url(../img/promotion-slider/1.jpg) no-repeat center;
     background-size: cover;
@@ -692,7 +724,6 @@ body {
 #section4 .wrap .right .middle .img-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: 
 }
 
 #section4 .wrap .right .middle .img-box > .img-wrap {
@@ -769,13 +800,17 @@ body {
 
 /*section5*/
 
-#seciotn5 {
-    width: 100%;
-    height: 100vh;
+#section5 {
     position: relative;
 }
 
-#seciotn5 > iframe {
+#section5::after {
+    content:"";
+    display: block;
+    padding-top:56.25%;
+}
+
+#section5 > iframe {
     position: absolute;
     top: 0;
     left: 0;

@@ -7,10 +7,13 @@ $(function () {
                 prevEl: '.swiper-button-prev',
             },
             loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-                autoplay: 3000,
                 renderBullet: function (index, className) {
                     var text = '';
 
@@ -44,6 +47,10 @@ $(function () {
             spaceBetween: 0,
             effect: 'fade',
             loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -61,6 +68,10 @@ $(function () {
     function section3_slider__init() {
         var swiper = new Swiper('#section3 .right .slider-wrap3 .swiper-container', {
             loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: '.button-next',
                 prevEl: '.button-prev',
