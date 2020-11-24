@@ -3,8 +3,8 @@ $(function () {
     function visual_slide__init() {
         var swiper = new Swiper('#visual .slider-wrap1 .swiper-container', {
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '#visual .slider-wrap1 .swiper-container .swiper-button-next',
+                prevEl: '#visual .slider-wrap1 .swiper-container .swiper-button-prev',
             },
             loop: true,
             autoplay: {
@@ -12,7 +12,7 @@ $(function () {
                 disableOnInteraction: false,
             },
             pagination: {
-                el: '.swiper-pagination',
+                el: '#visual .slider-wrap1 .swiper-container .swiper-pagination',
                 clickable: true,
                 renderBullet: function (index, className) {
                     var text = '';
@@ -52,7 +52,7 @@ $(function () {
                 disableOnInteraction: false,
             },
             pagination: {
-                el: '.swiper-pagination',
+                el: '#section1 .slider-wrap2 .swiper-container .swiper-pagination',
                 clickable: true,
                 autoplay: 3000,
             },
@@ -73,8 +73,8 @@ $(function () {
                 disableOnInteraction: false,
             },
             navigation: {
-                nextEl: '.button-next',
-                prevEl: '.button-prev',
+                nextEl: '#section3 .right .slider-wrap3 .swiper-container .button-next',
+                prevEl: '#section3 .right .slider-wrap3 .swiper-container .button-prev',
             },
         });
     }
