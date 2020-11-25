@@ -61,6 +61,7 @@ body {
 
 #header .menu {
     height: 100%;
+    margin-right: 130px;
 }
 
 #header .menu > ul {
@@ -184,6 +185,10 @@ body {
     line-height: 130px;
     font-size: 14px;
     color: #555;
+}
+
+#header .sns > ul li a:hover {
+    text-decoration: underline;
 }
 
 #header .menu-bg {
@@ -495,7 +500,7 @@ body {
 #section3 .left {
     width: 450px;
     height: 100%;
-    background: url(../img/global_con_img3.jpg) no-repeat 20%;
+    background: url(../img/gongcha_10.jpg) no-repeat 70%;
     background-size: cover;
 }
 
@@ -870,6 +875,7 @@ body {
 #section6 .tab-box-1 > .head > ul > li > a {
     color: rgba(0, 0, 0, 0.3);
     font-size: 15px;
+    cursor: pointer;
 }
 
 #section6 .tab-box-1 > .head > ul > li.active > a {
