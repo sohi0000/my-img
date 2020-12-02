@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+/*    font-family: 'Teko', sans-serif;*/
+}
+
+.con-min-width {
+    min-width: 1300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.con {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-as-c {
+    align-self: center;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/*style*/
