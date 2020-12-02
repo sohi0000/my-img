@@ -23,6 +23,7 @@ html {
     min-width: 1300px;
     padding-left: 20px;
     padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .con {
@@ -46,9 +47,112 @@ html {
     justify-content: space-between;
 }
 
+.flex-ai-c {
+    align-items: center;
+}
 
-
-
-
+.relative {
+    position: relative;
+}
 
 /*style*/
+
+#header > .hd-box {
+    width: 100vw;
+    height: 100px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#header > .hd-box > .menu {
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    width: 800px;
+}
+
+#header > .hd-box > .menu > ul > li > a {
+    display: block;
+}
+
+#header > .hd-box > .menu > .bottom-line {
+    width: 0;
+    position: absolute;
+    background-color: #fff;  
+    transition: width 0.3s, left 0.3s;
+    height: 3px;
+    top: 120%;
+    left: 0;
+}
+
+#header > .hd-box > .login {
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#header > .hd-box > .login > ul > li {
+    padding: 0 10px;
+}
+
+#header > .hd-box > .login > ul > li > a {
+    display: block;
+}
+
+#header > .hd-box > .login > ul > li:hover > a {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
