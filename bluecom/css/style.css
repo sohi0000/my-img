@@ -80,7 +80,7 @@ html {
 }
 
 #header > .hd-box > .menu > .bottom-line {
-    width: 0;
+    width: 182px;
     position: absolute;
     background-color: #fff;  
     transition: width 0.3s, left 0.3s;

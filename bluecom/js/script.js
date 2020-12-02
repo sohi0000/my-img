@@ -25,18 +25,10 @@ $(document).ready(function () {
 
         $('.hd-box > .menu > ul').mouseleave(function () {
             $itemBottomLine.css('left', '');
+            $itemBottomLine.css('width', '');
             $itemBottomLine.css('transition', '1s');
         });
     }
 
     BottomLine__init();
-
-
-
-
-
-
-
-
-
 });
