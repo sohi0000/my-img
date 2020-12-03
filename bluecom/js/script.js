@@ -76,7 +76,7 @@ $(document).ready(function () {
             mousewheel: false,
             keyboard: true,
         });
-        
+
         var swiper2 = new Swiper('.section1-wrap .slide-wrap2 .swiper-container', {
             loop: true,
             speed: 800,
@@ -95,37 +95,61 @@ $(document).ready(function () {
             mousewheel: false,
             keyboard: true,
         });
-        
+
         swiper1.controller.control = [swiper2];
-        
+
         swiper2.controller.control = [swiper1];
     };
 
     slide2__init();
-    
-    
+
+
     function slide3__init() {
-      var swiper3 = new Swiper('.swiper-container',{
+        var swiper3 = new Swiper('.section2-wrap > .left > .left-slide .swiper-container', {
             loop: true,
-      });  
-        
-        
+        });
+
+        var swiper4 = new Swiper('.section2-wrap > .right > .right-slide .swiper-container', {
+            loop: true,
+            effect: 'fade',
+            scrollbar: {
+                el: '.section2-wrap > .right > .right-slide .swiper-container .swiper-scrollbar',
+            },
+            navigation: {
+                nextEl: '.section2-wrap > .right > .right-slide .swiper-container .button-next',
+                prevEl: '.section2-wrap > .right > .right-slide .swiper-container .button-prev',
+            },
+        });
+
+        swiper3.controller.control = [swiper4];
+
+        swiper4.controller.control = [swiper3];
     };
-    
+
     slide3__init();
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    function ClickBtn__init() {
+
+//        $('[data-tab-head-item-name]').click(function () {
+//            var $this = $(this);
+//            var tabName = $this.attr('data-tab-name');
+//            var itemName = $this.attr('data-tab-head-item-name');
+//            // [for]
+//            // 모든 것을 숨기고
+//            $('[data-tab-name="' + tabName + '"]').removeClass('active');
+//
+//            $('[data-tab-name="' + tabName + '"][data-tab-head-item-name="' + itemName + '"]').addClass('active');
+//            $('[data-tab-name="' + tabName + '"][data-tab-body-item-name="' + itemName + '"]').addClass('active');
+//        });
+//    }
+
+};
+
+
+    ClickBtn__init();
+
+
+
+
 
 });

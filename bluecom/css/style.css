@@ -65,7 +65,7 @@ html {
 #header > .hd-box {
     width: 100vw;
     height: 100px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
     left: 0;
@@ -149,7 +149,7 @@ html {
 }
 
 #visual .swiper-container .swiper-wrapper .swiper-slide img {
-    width:100%;
+    width: 100%;
     display: block;
     height: 100%;
     object-fit: cover;
@@ -362,7 +362,6 @@ html {
 #section2 .section2-wrap > .left {
     width: 50%;
     height: 100%;
-    background-color: #ddd;
 }
 
 #section2 .section2-wrap > .right {
@@ -397,7 +396,7 @@ html {
     height: 100%;
 }
 
-#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .slide4  {
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .slide4 {
     background: url(../img/image/4-1.jpg) no-repeat center;
     background-size: cover;
     height: 100%;
@@ -413,26 +412,238 @@ html {
     height: 100%;
     width: 100%;
     display: inline-block;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .swiper-slide:hover > .hover {
+    opacity: 1;
+}
+
+#section2 .section2-wrap > .right > .right-slide {
+    height: 100%;
+}
+
+#section2 .section2-wrap > .right > .right-slide .swiper-container {
+    height: 100%;
+}
+
+#section2 .section2-wrap > .right > .right-slide .swiper-container .swiper-slide {
+    position: relative;
+}
+
+#section2 .section2-wrap > .right > .right-slide .swiper-container .swiper-slide .img {
+    width: 45%;
+    padding-bottom: 45%;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+
+#section2 .section2-wrap > .right > .right-slide .swiper-container .slide1 .img {
+    background: url(../img/image/1-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#section2 .section2-wrap > .right > .right-slide .swiper-container .slide2 .img {
+    background: url(../img/image/2-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#section2 .section2-wrap > .right > .right-slide .swiper-container .slide3 .img {
+    background: url(../img/image/3-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#section2 .section2-wrap > .right > .right-slide .swiper-container .slide4 .img {
+    background: url(../img/image/4-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#section2 .section2-wrap > .right > .right-slide .swiper-container .slide5 .img {
+    background: url(../img/image/5-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*
+#section2 .section2-wrap .right-slide .swiper-container .slide1 .img a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+*/
+
+#section2 .section2-wrap .right-slide .swiper-container .button-prev {
+    position: absolute;
+    left: 8%;
+    bottom: 30%;
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 3;
+    outline: inherit;
+}
+
+#section2 .section2-wrap .right-slide .swiper-container .button-prev img {
+    width: 28px;
+}
+
+#section2 .section2-wrap .right-slide .swiper-container .button-next {
+    position: absolute;
+    right: 8%;
+    top: 30%;
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 3;
+    outline: inherit;
+}
+
+#section2 .section2-wrap .right-slide .swiper-container .button-next img {
+    width: 28px;
+}
+
+#section2 .section2-wrap .right-slide .swiper-container .txt {
+    position: absolute;
+    top: 70%;
+    background-color: #222;
+    width: 50%;
+    padding-bottom: 10%;
+    left: 15%;
+    
+}
+
+#section2 .section2-wrap .right-slide .swiper-container .txt p:first-child {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#section2 .section2-wrap .right-slide .swiper-container .txt p:last-child {
+    color: #fff;
+    font-size: 17px;
+}
+
+#section2 .section2-wrap .right-slide .swiper-container .swiper-scrollbar {
+    height: 8px;
+    width: 80%;
+    bottom: 10px;
+    left: 10%;
+    border-radius: 0;
+    background-color: rgba(255,255,255,0.4);
+}
+
+#section2 .section2-wrap .right-slide .swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
+    border-radius: 0;
+    background-color: #fff;
+}
+
+/*section3*/
+
+#section3 {
+    background-color: #000;
+}
+
+#section3 .left {
+    width: 80%;
+}
+
+#section3 .left::after {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%;
+}
+
+#section3 .left > iframe:first-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#section3 .left > iframe:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    display: none;
 }
 
 
+#section3 .left > iframe:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
 
+#section3 > div {
+    display: flex;
+}
 
+#section3 .right {
+    width: 20%;
+    height: 100%;
+}
 
+#section3 .right > .btn > div {
+    padding-bottom: 66.29%;
+    width: 100%;
+}
 
+#section3 .right > .btn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+#section3 .right > .btn > .grow {
+    flex-grow: 1;
+    padding-bottom: 0;
+}
 
+#section3 .right > .btn > .btn1 {
+    background: url(../img/btn1.jpg) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
 
+#section3 .right > .btn > .btn2 {
+    background: url(../img/btn2.jpg) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
 
+#section3 .right > .btn > .btn3 {
+    background: url(../img/btn3.jpg) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
+#section3 .left > iframe.active {
+    display: block;
+}
 
 
 
