@@ -58,7 +58,7 @@ $(document).ready(function () {
     slide1__init();
 
     function slide2__init() {
-        var swiper = new Swiper('.section1-wrap .slide-wrap .swiper-container', {
+        var swiper1 = new Swiper('.section1-wrap .slide-wrap .swiper-container', {
             loop: true,
             speed: 800,
             //            autoplay: {
@@ -73,9 +73,11 @@ $(document).ready(function () {
                 el: '.section1-wrap .swiper-pagination',
                 clickable: true,
             },
+            mousewheel: false,
             keyboard: true,
         });
-        var swiper = new Swiper('.section1-wrap .slide-wrap2 .swiper-container', {
+        
+        var swiper2 = new Swiper('.section1-wrap .slide-wrap2 .swiper-container', {
             loop: true,
             speed: 800,
             //            autoplay: {
@@ -90,10 +92,40 @@ $(document).ready(function () {
                 el: '.section1-wrap .swiper-pagination',
                 clickable: true,
             },
+            mousewheel: false,
             keyboard: true,
         });
+        
+        swiper1.controller.control = [swiper2];
+        
+        swiper2.controller.control = [swiper1];
     };
 
     slide2__init();
+    
+    
+    function slide3__init() {
+      var swiper3 = new Swiper('.swiper-container',{
+            loop: true,
+      });  
+        
+        
+    };
+    
+    slide3__init();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 });

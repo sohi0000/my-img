@@ -29,9 +29,6 @@ html {
 
 .con-min-width {
     min-width: 1300px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
 }
 
 .con {
@@ -68,17 +65,20 @@ html {
 #header > .hd-box {
     width: 100vw;
     height: 100px;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.6);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 #header > .hd-box > .menu {
     color: #fff;
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
     width: 800px;
 }
@@ -88,7 +88,7 @@ html {
 }
 
 #header > .hd-box > .menu > .bottom-line {
-    width: 196px;
+    width: 170px;
     position: absolute;
     background-color: #fff;
     transition: width 0.3s, left 0.3s;
@@ -148,6 +148,14 @@ html {
     height: 100vh;
 }
 
+#visual .swiper-container .swiper-wrapper .swiper-slide img {
+    width:100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 #visual .swiper-container .swiper-wrapper .swiper-slide .txt {
     text-align: center;
     color: #fff;
@@ -181,12 +189,6 @@ html {
 }
 
 /*section1*/
-
-/*
-#section1 {
-    background-color: grey;
-}
-*/
 
 #section1 .section1-wrap {
     height: 100%;
@@ -246,16 +248,27 @@ html {
 
 #section1 .section1-wrap .swiper-pagination {
     top: -8%;
+    left: 3%;
+}
+
+#section1 .section1-wrap .swiper-pagination .swiper-pagination-bullet {
+    width: 80px;
+    height: 5px;
+    border-radius: 0;
+    transition: 0.3s;
+    background-color: #000;
+    outline: inherit;
 }
 
 #section1 .section1-wrap .button-prev {
     position: absolute;
-    bottom: 30%;
+    top: 70%;
     right: 110%;
     display: block;
     width: 0;
     height: 0;
     z-index: 3;
+    outline: inherit;
 }
 
 #section1 .section1-wrap .button-prev img {
@@ -264,16 +277,22 @@ html {
 
 #section1 .section1-wrap .button-next {
     position: absolute;
-    top: 0;
+    bottom: 100%;
     right: -115%;
     display: block;
     width: 0;
     height: 0;
     z-index: 3;
+    outline: inherit;
 }
 
 #section1 .section1-wrap .button-next img {
     width: 28px;
+}
+
+#section1 .section1-wrap .swiper-slide {
+    height: 0;
+    padding-bottom: 100%;
 }
 
 #section1 .section1-wrap .slide-wrap .swiper-slide span:first-child {
@@ -286,7 +305,7 @@ html {
 
 #section1 .section1-wrap .slide-wrap .swiper-slide span:nth-child(2) {
     position: absolute;
-    top: 9%;
+    top: 13%;
     text-decoration: line-through;
     color: #555;
     font-size: 14px;
@@ -295,7 +314,7 @@ html {
 
 #section1 .section1-wrap .slide-wrap .swiper-slide span:nth-child(3) {
     position: absolute;
-    top: 10.5%;
+    top: 16%;
     font-size: 20px;
     font-weight: bold;
     right: 7%;
@@ -315,7 +334,7 @@ html {
 
 #section1 .section1-wrap .slide-wrap2 .swiper-slide span:nth-child(2) {
     position: absolute;
-    top: 9%;
+    top: 13%;
     text-decoration: line-through;
     color: #555;
     font-size: 14px;
@@ -324,11 +343,91 @@ html {
 
 #section1 .section1-wrap .slide-wrap2 .swiper-slide span:nth-child(3) {
     position: absolute;
-    top: 10.5%;
+    top: 16%;
     font-size: 20px;
     font-weight: bold;
     right: 7%;
 }
+
+/*section2*/
+
+#section2 {
+    height: 100vh;
+}
+
+#section2 .section2-wrap {
+    height: 100%;
+}
+
+#section2 .section2-wrap > .left {
+    width: 50%;
+    height: 100%;
+    background-color: #ddd;
+}
+
+#section2 .section2-wrap > .right {
+    width: 50%;
+    height: 100%;
+    background-color: #222;
+}
+
+#section2 .section2-wrap > .left > .left-slide {
+    height: 100%;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-container {
+    height: 100%;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .slide1 {
+    background: url(../img/image/1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .slide2 {
+    background: url(../img/image/2-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .slide3 {
+    background: url(../img/image/3-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .slide4  {
+    background: url(../img/image/4-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .slide5 {
+    background: url(../img/image/5-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+#section2 .section2-wrap > .left > .left-slide .swiper-wrapper .swiper-slide a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
