@@ -557,94 +557,33 @@ html {
     background-color: #000;
 }
 
-#section3 .left {
-    width: 80%;
+
+.tab-box-1 > .head > ul > li.active > a {
+  color:red;
 }
 
-#section3 .left::after {
-    content: "";
-    display: block;
-    padding-bottom: 56.25%;
+.tab-box-1 > .body > ul > li {
+  visibility:hidden;
+  opacity:0;
+  position:absolute;
 }
 
-#section3 .left > iframe:first-child {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
+.tab-box-1 > .body > ul > li > img {
+  transform:translateX(-100%);
+  transition:transform 1s;
 }
 
-#section3 .left > iframe:nth-child(2) {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 100%;
-    display: none;
+.tab-box-1 > .body > ul > li.active {
+  visibility:visible;
+  opacity:1;
+  position:static;
+  filter:blur(0);
+  transition:visibility 1s, opacity 1s, filter 1s;
 }
 
-
-#section3 .left > iframe:nth-child(3) {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 100%;
-    display: none;
+.tab-box-1 > .body > ul > li.active > img {
+  transform:translateX(0);
 }
-
-#section3 > div {
-    display: flex;
-}
-
-#section3 .right {
-    width: 20%;
-    height: 100%;
-}
-
-#section3 .right > .btn > div {
-    padding-bottom: 66.29%;
-    width: 100%;
-}
-
-#section3 .right > .btn {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#section3 .right > .btn > .grow {
-    flex-grow: 1;
-    padding-bottom: 0;
-}
-
-#section3 .right > .btn > .btn1 {
-    background: url(../img/btn1.jpg) no-repeat center;
-    background-size: cover;
-    cursor: pointer;
-}
-
-#section3 .right > .btn > .btn2 {
-    background: url(../img/btn2.jpg) no-repeat center;
-    background-size: cover;
-    cursor: pointer;
-}
-
-#section3 .right > .btn > .btn3 {
-    background: url(../img/btn3.jpg) no-repeat center;
-    background-size: cover;
-    cursor: pointer;
-}
-
-#section3 .left > iframe.active {
-    display: block;
-}
-
 
 
 
