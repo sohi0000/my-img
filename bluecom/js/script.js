@@ -57,6 +57,7 @@ $(document).ready(function () {
 
     slide1__init();
 
+    
     function slide2__init() {
         var swiper1 = new Swiper('.section1-wrap .slide-wrap .swiper-container', {
             loop: true,
@@ -84,10 +85,7 @@ $(document).ready(function () {
             //                delay: 5000,
             //                disableOnInteraction: false,
             //            },
-            navigation: {
-                nextEl: '.section1-wrap .button-next',
-                prevEl: '.section1-wrap .button-prev',
-            },
+            
             pagination: {
                 el: '.section1-wrap .swiper-pagination',
                 clickable: true,
@@ -112,8 +110,9 @@ $(document).ready(function () {
         var swiper4 = new Swiper('.section2-wrap > .right > .right-slide .swiper-container', {
             loop: true,
             effect: 'fade',
-            scrollbar: {
-                el: '.section2-wrap > .right > .right-slide .swiper-container .swiper-scrollbar',
+            pagination: {
+                el: '.section2-wrap > .right > .right-slide .swiper-container .swiper-pagination',
+                type: 'progressbar',
             },
             navigation: {
                 nextEl: '.section2-wrap > .right > .right-slide .swiper-container .button-next',
@@ -128,28 +127,20 @@ $(document).ready(function () {
 
     slide3__init();
 
-    function ClickBtn__init() {
+    
+    function TabBox__init() {
+        $('[data-tab-head-item-name]').click(function () {
+            var $this = $(this);
+            var tabName = $this.attr('data-tab-name');
+            var itemName = $this.attr('data-tab-head-item-name');
+            // [for]
+            // 모든 것을 숨기고
+            $('[data-tab-name="' + tabName + '"]').removeClass('active');
 
-//        $('[data-tab-head-item-name]').click(function () {
-//            var $this = $(this);
-//            var tabName = $this.attr('data-tab-name');
-//            var itemName = $this.attr('data-tab-head-item-name');
-//            // [for]
-//            // 모든 것을 숨기고
-//            $('[data-tab-name="' + tabName + '"]').removeClass('active');
-//
-//            $('[data-tab-name="' + tabName + '"][data-tab-head-item-name="' + itemName + '"]').addClass('active');
-//            $('[data-tab-name="' + tabName + '"][data-tab-body-item-name="' + itemName + '"]').addClass('active');
-//        });
-//    }
+            $('[data-tab-name="' + tabName + '"][data-tab-head-item-name="' + itemName + '"]').addClass('active');
+            $('[data-tab-name="' + tabName + '"][data-tab-body-item-name="' + itemName + '"]').addClass('active');
+        });
+    };
 
-};
-
-
-    ClickBtn__init();
-
-
-
-
-
+    TabBox__init();
 });
