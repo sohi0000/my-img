@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     slide1__init();
 
-    
+
     function slide2__init() {
         var swiper1 = new Swiper('.section1-wrap .slide-wrap .swiper-container', {
             loop: true,
@@ -85,7 +85,7 @@ $(document).ready(function () {
             //                delay: 5000,
             //                disableOnInteraction: false,
             //            },
-            
+
             pagination: {
                 el: '.section1-wrap .swiper-pagination',
                 clickable: true,
@@ -127,7 +127,7 @@ $(document).ready(function () {
 
     slide3__init();
 
-    
+
     function TabBox__init() {
         $('[data-tab-head-item-name]').click(function () {
             var $this = $(this);
@@ -143,4 +143,39 @@ $(document).ready(function () {
     };
 
     TabBox__init();
+
+    function text__init() {
+        $('.sec3-tp').marquee({
+            speed: 200,
+            gap: 50,
+            delayBeforeStart: 0,
+            direction: 'left',
+            duplicated: true,
+//            pauseOnHover: true
+        });
+    };
+
+    text__init();
+    
+
+    function slide4__inif() {
+        var swiper5 = new Swiper('#section5 .slide-wrap > .swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '#section5 .slide-wrap > .swiper-container .swiper-button-next',
+                prevEl: '#section5 .slide-wrap > .swiper-container .swiper-button-prev',
+            },
+        });
+    };
+
+    slide4__init();
+
+
+
+
+
+
+
 });
