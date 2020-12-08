@@ -171,12 +171,17 @@ $(document).ready(function () {
 
     function slide4__init() {
         var swiper5 = new Swiper('#section5 .slide-wrap > .swiper-container', {
-            slidesPerView: 4,
-            spaceBetween: 30,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            breakpoints: {
+                1500: {
+                    slidesPerView: 4,
+                }
+            },
             loop: true,
             navigation: {
-                nextEl: '#section5 .slide-wrap > .swiper-container .swiper-button-next',
-                prevEl: '#section5 .slide-wrap > .swiper-container .swiper-button-prev',
+                nextEl: '#section5 .slide-wrap > .swiper-container .button-next',
+                prevEl: '#section5 .slide-wrap > .swiper-container .button-prev',
             },
         });
     };
