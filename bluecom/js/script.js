@@ -145,22 +145,33 @@ $(document).ready(function () {
     TabBox__init();
 
     function text__init() {
-        $('.sec3-tp').marquee({
-            speed: 200,
+        $('.sec4-tp').marquee({
+            speed: 50,
             gap: 50,
             delayBeforeStart: 0,
             direction: 'left',
             duplicated: true,
-//            pauseOnHover: true
+            delayBeforeStart: 0
+            //            pauseOnHover: true
+        });
+
+        $('.sec4-bt').marquee({
+            speed: 50,
+            gap: 50,
+            delayBeforeStart: 0,
+            direction: 'right',
+            duplicated: true,
+            delayBeforeStart: 0
+            //            pauseOnHover: true
         });
     };
 
     text__init();
-    
 
-    function slide4__inif() {
+
+    function slide4__init() {
         var swiper5 = new Swiper('#section5 .slide-wrap > .swiper-container', {
-            slidesPerView: 1,
+            slidesPerView: 4,
             spaceBetween: 30,
             loop: true,
             navigation: {
