@@ -606,11 +606,17 @@ html {
 
 #section3 .tab-box-1 {
     align-items: center;
+    margin-top: 50px;
 }
 
 #section3 .tab-box-1 > .head > ul > li {
     position: relative;
     cursor: pointer;
+    margin-top: 30px;
+}
+
+#section3 .tab-box-1 > .head > ul > li:first-child {
+    margin-top: 0;
 }
 
 #section3 .tab-box-1 > .head > ul > li::after {
@@ -631,6 +637,7 @@ html {
 
 #section3 .tab-box-1 > .head > ul > li > p {
     color: #fff;
+    font-size: 18px;
     position: absolute;
     bottom: 30px;
     left: 30px;
@@ -770,6 +777,10 @@ html {
 
 #section4 .sec4-md > div > .txt-box > P:nth-child(3) {
     font-size: 17px;
+}
+
+#section4 .sec4-tp {
+    margin-top: 80px;
 }
 
 #section4 .sec4-tp,
