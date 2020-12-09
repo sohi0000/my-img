@@ -625,6 +625,19 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#section3 .tab-box-1 > .head > ul > li > p {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+#section3 .tab-box-1 > .head > ul > li > img:hover {
+    opacity: 1;
 }
 
 #section3 .tab-box-1 > .head {
@@ -656,7 +669,7 @@ html {
 }
 
 #section3 .tab-box-1 > .body > ul {
-    width: 100%;
+    width: 100%;    
 }
 
 #section3 .tab-box-1 > .body > ul > li::after {
@@ -827,6 +840,15 @@ html {
     background-color: #222;
 }
 
+#section5 h2 {
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 #section5 .sec5-bg {
     width: 40%;
     height: 100%;
@@ -848,6 +870,7 @@ html {
 
 #section5 .slide-wrap > .swiper-container {
     height: 100%;
+    position: relative;
 }
 
 #section5 .slide-wrap > .swiper-container > .swiper-wrapper > .swiper-slide {
@@ -932,25 +955,41 @@ html {
     transform: scale(1);
 }
 
-#section5 .slide-wrap > .swiper-container > .button-prev, 
-#section5 .slide-wrap > .swiper-container > .button-next {
-    background-color: rgba(255,255,255,0.5);
-    width: 50px;
+#section5 .slide-wrap > .button-prev, 
+#section5 .slide-wrap > .button-next {
+    background-color: rgba(255,255,255,0.7);
+    width: 80px;
     height: 50px;
-    z-index: 3;
+    z-index: 500;
     display: inline-block;
+    position: absolute;
+    outline: inherit;
 }
 
-#section5 .slide-wrap > .swiper-container > .button-prev > .img {
-    width: 30px;
-    height: 30px;
-    background: url(../img/item-prev-icon.png) no-repeat center;
+#section5 .slide-wrap > .button-prev {
+    top: calc(50% - 51px);
+    left: -150px;
 }
 
-#section5 .slide-wrap > .swiper-container > .button-next > .img {
-    width: 30px;
-    height: 30px;
+#section5 .slide-wrap > .button-next {
+    top: calc(50% + 1px);
+    left: -150px;
+}
+
+#section5 .slide-wrap > .button-prev > .img {
+    width: 10px;
+    height: 20px;
     background: url(../img/item-prev-icon.png) no-repeat center;
+    background-size: cover;
+    transform: translate(33px, 15px);
+}
+
+#section5 .slide-wrap > .button-next > .img {
+    width: 10px;
+    height: 20px;
+    background: url(../img/item-next-icon.png) no-repeat center;
+    background-size: cover;
+    transform: translate(35px, 15px);
 }
 
 /*footer*/

@@ -154,7 +154,12 @@ $(document).ready(function () {
             delayBeforeStart: 0
             //            pauseOnHover: true
         });
+    };
 
+    setTimeout(text__init, 500);
+
+
+    function text2__init() {
         $('.sec4-bt').marquee({
             speed: 50,
             gap: 50,
@@ -166,7 +171,7 @@ $(document).ready(function () {
         });
     };
 
-    text__init();
+    setTimeout(text2__init, 500);
 
 
     function slide4__init() {
@@ -180,8 +185,8 @@ $(document).ready(function () {
             },
             loop: true,
             navigation: {
-                nextEl: '#section5 .slide-wrap > .swiper-container .button-next',
-                prevEl: '#section5 .slide-wrap > .swiper-container .button-prev',
+                nextEl: '#section5 .slide-wrap > .button-next',
+                prevEl: '#section5 .slide-wrap > .button-prev',
             },
         });
     };
