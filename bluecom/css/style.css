@@ -872,7 +872,7 @@ html {
 
 #section5 .slide-wrap {
     width: 80%;
-    height: 45%;
+/*    height: 45%;*/
     position: absolute;
     right: -15%;
     top: 55%;
@@ -975,6 +975,7 @@ html {
     display: inline-block;
     position: absolute;
     outline: inherit;
+    cursor: pointer;
 }
 
 #section5 .slide-wrap > .button-prev {

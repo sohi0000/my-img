@@ -1,0 +1,84 @@
+define([ "ezCtrl"], function(ezCtrl) {
+
+	"use strict";
+
+	// set controller name
+	var exports = {
+		controller : "controller/fm/fma/FMAMainCtrl"
+	};
+
+	// get controller object
+	var ctrl = new ezCtrl.controller(exports.controller);
+	var csrfKey = ctrl.obj.data("csrfKey");
+
+	// set model
+	ctrl.model = {
+		id : {
+			goStoreSearch : {
+				event : {
+					click : function() {
+						var storeSrchQ = jQuery("#storeSrchQ").val();
+						if(storeSrchQ == "")
+						{
+							alert(msgCtrl.getMsg("fail.co.search.main_store"));
+							jQuery("#storeSrchQ").focus();
+						}
+						else
+						{
+							location.href = "/store/guide/index.do?storeSearch=" + storeSrchQ;
+						}
+					}
+				}
+			},
+			moveCSBtn : {
+				event : {
+					click : function() {
+						cmmCtrl.loginCheckPage("/customer/counsel/index.do");
+					}
+				}
+			}
+		},
+		classname : {
+			clickChk : {
+				event : {
+					click : function() {
+						cmmCtrl.paramAjax("", "./insert-cnt.ajax", {"areaCd" : jQuery(this).data("areaCd"), "csrfKey" : csrfKey });
+					}
+				}
+			}
+		},
+		immediately : function() {
+			if (jQuery(".mainPop").length > 0)
+			{
+				if(cmmCtrl.getCookie("mainPopup") != "false")
+				{
+					subScript.layerPop(".mainPop");
+					subScript.mainPopSwp();
+				}
+			}
+
+			if (jQuery(".rvwNotiPop").length > 0)
+			{
+				if(cmmCtrl.getCookie("rvwNotiPopup") != "false")
+				{
+					subScript.layerPop(".rvwNotiPop");
+				}
+			}
+
+			jQuery(".mainClickChk").on("click", function(){
+				var paramData = {
+					"mainType" : jQuery(this).data("type"),
+					"detailsKey" : jQuery(this).data("seq"),
+					"csrfKey" : csrfKey
+				}
+
+				cmmCtrl.paramAjax("", "./update-cnt.ajax", paramData);
+			});
+		}
+	};
+
+	// execute model
+	ctrl.exec();
+
+	return ctrl;
+});
